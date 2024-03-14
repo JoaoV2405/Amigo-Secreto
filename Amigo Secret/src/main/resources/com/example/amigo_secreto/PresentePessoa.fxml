@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amigo_secreto.gui.PresentePessoa">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="400.0" prefWidth="672.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="107.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="221.0" />
+                  <Button fx:id="pessoas" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#pessoasTela" prefHeight="25.0" prefWidth="67.0" text="Pessoas">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="grupos" layoutX="14.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#gruposTela" prefHeight="28.0" prefWidth="67.0" text="Grupos">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="presentes" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#presentesTela" prefHeight="25.0" prefWidth="67.0" text="Presentes">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sorteio" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#sorteioTela" prefHeight="25.0" prefWidth="67.0" text="Sorteio">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cadastroPessoas" layoutX="107.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#pessoasTela" prefHeight="25.0" prefWidth="110.0" text="Cadastro de Pessoas">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelar" layoutX="454.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancelar" />
+                  <Button fx:id="salvar" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#salvar" text="Salvar" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="33.0" layoutX="342.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="258.0" />
+                  <Label layoutX="203.0" layoutY="74.0" text="Pessoa:" />
+                  <ComboBox fx:id="pessoa" layoutX="251.0" layoutY="70.0" onAction="#pessoasel" prefWidth="150.0" />
+                  <Label layoutX="162.0" layoutY="118.0" text="Todos os presentes " />
+                  <Label layoutX="365.0" layoutY="118.0" text="Presentes da pessoa" />
+                  <ListView fx:id="todos" layoutX="128.0" layoutY="150.0" onMouseClicked="#todosLista" prefHeight="200.0" prefWidth="175.0" />
+                  <ListView fx:id="presentePessoa" layoutX="367.0" layoutY="150.0" prefHeight="200.0" prefWidth="175.0" />
+                  <Button fx:id="add" layoutX="316.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#add" text="Add" />
+                  <Button fx:id="del" layoutX="318.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#del" text="Del" />
+                  <Label layoutX="228.0" layoutY="8.0" text="Presentes da Pessoa" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

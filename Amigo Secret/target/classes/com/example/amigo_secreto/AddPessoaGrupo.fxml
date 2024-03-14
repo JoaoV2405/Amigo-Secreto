@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amigo_secreto.gui.AddPessoaGrupo">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+               <top>
+                  <AnchorPane prefHeight="400.0" prefWidth="672.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="107.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="222.0" />
+                        <Button fx:id="pessoas" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#pessoasTela" prefHeight="25.0" prefWidth="67.0" text="Pessoas">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="grupos" layoutX="14.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#gruposTela" prefHeight="28.0" prefWidth="67.0" text="Grupos">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="presentes" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#presentesTela" prefHeight="25.0" prefWidth="67.0" text="Presentes">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="sorteio" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#sorteioTela" prefHeight="25.0" prefWidth="67.0" text="Sorteio">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cadastroGrupos" layoutX="107.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#gruposTela" prefHeight="25.0" prefWidth="110.0" text="Cadastro de Grupos">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="211.0" layoutY="93.0" text="Grupo:" />
+                        <Button fx:id="cancelar" layoutX="454.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancelar" />
+                        <Button fx:id="salvar" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#save" text="Salvar" />
+                        <Label layoutX="113.0" layoutY="133.0" text="Todas as Pessoas:" />
+                        <ComboBox fx:id="grupo" layoutX="260.0" layoutY="89.0" onAction="#gruposel" prefWidth="150.0" />
+                        <Label layoutX="363.0" layoutY="133.0" text="Pessoas no grupo:" />
+                        <ListView fx:id="pessoasTotal" layoutX="113.0" layoutY="150.0" prefHeight="200.0" prefWidth="170.0" />
+                        <ListView fx:id="pessoasgp" layoutX="364.0" layoutY="150.0" prefHeight="200.0" prefWidth="164.0" />
+                        <Button fx:id="add" layoutX="300.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#add" text="Add" />
+                        <Button fx:id="del" layoutX="302.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#del" text="Del" />
+                        <Label layoutX="229.0" layoutY="8.0" text="Pessoas em Grupo" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="33.0" layoutX="335.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="267.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
